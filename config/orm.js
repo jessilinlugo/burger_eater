@@ -12,7 +12,7 @@ const orm = {
     },
     
     insertOne(burger, cb) {
-        let queryString = `INSERT INTO burgers SET burger = ?`;
+        let queryString = `INSERT INTO burgers SET burger_name = ?`;
         connection.query(queryString, burger, (err, result) => {
             if (err) {
                 throw err;
