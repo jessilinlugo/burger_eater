@@ -1,12 +1,15 @@
 const express = require('express');
-const models = require('../models/');
+const models = require('../models/burger');
+const router = express.Router();
 
 //this shows all available burgers
 router.get('/', (req, res) => {
-    models.burger.selectAll((data) => {
+
+    models.selectAll((data) => {
         const handlebarsObj = {
             burgers: data
         };
+        console.log(handlebarsObj);
         res.render('index', handlebarsObj);
     });
 });
