@@ -39,16 +39,6 @@ router.put('/api/burgers/:id', (req, res) => {
         });
 });
 
-//this deletes a burger
-router.delete('/api/burger/:id', (req, res) => {
-    const current_id = req.params.id;
-    burger.delete(condition, (result) => {
-        if (result.affectedRows === 0){
-            return res.status(404).end();
-        }
-        res.status(200).end();
-    });
-});
 
 
 module.exports = router;
