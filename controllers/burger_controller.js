@@ -1,11 +1,11 @@
 const express = require('express');
-const models = require('../models/burger');
+const burger = require('../models/burger');
 const router = express.Router();
 
 //this shows all available burgers
 router.get('/', (req, res) => {
 
-    models.selectAll((data) => {
+    burger.selectAll((data) => {
         const handlebarsObj = {
             burgers: data
         };
@@ -15,8 +15,8 @@ router.get('/', (req, res) => {
 });
 
 //this adds the user's burger to the list
-router.post('api/burgers', (req, res) => {
-    models.burger.insertOne(burger_name, req.body.burger, (result) => {
+router.post('/api/burgers', (req, res) => {
+    burger.insertOne([req.body.new_burger], (result) => {
         res.json({ id: result.insertId });
     });
 });
@@ -24,7 +24,7 @@ router.post('api/burgers', (req, res) => {
 //this shows whether or not a burger has been devoured
 router.put('/api/burgers/:id', (req, res) => {
     const current_id = req.params.id;
-    mdoels.burger.updateOne(
+    burger.updateOne(
         { 
             id: current_id 
         },
@@ -42,7 +42,7 @@ router.put('/api/burgers/:id', (req, res) => {
 //this deletes a burger
 router.delete('/api/burger/:id', (req, res) => {
     const current_id = req.params.id;
-    models.burger.delete(condition, (result) => {
+    burger.delete(condition, (result) => {
         if (result.affectedRows === 0){
             return res.status(404).end();
         }
