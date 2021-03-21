@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 //this adds the user's burger to the list
 router.post('/api/burgers', (req, res) => {
-    burger.insertOne([req.body.new_burger], (result) => {
+    burger.insertOne([req.body.burger_name], (result) => {
         res.json({ id: result.insertId });
     });
 });
