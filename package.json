@@ -1,5 +1,5 @@
 {
-  "name": "db",
+  "name": "burger",
   "version": "1.0.0",
   "description": "Tracks your burger eating habits",
   "main": "index.js",
