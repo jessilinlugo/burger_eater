@@ -5,7 +5,7 @@
 ------------
 
 
-Link to my deployed application : <a href="https://git.heroku.com/stormy-fjord-01940.git">Here</a>
+Link to my deployed application : <a href="https://stormy-fjord-01940.herokuapp.com/">Here</a>
 
 
 ------------
@@ -16,7 +16,7 @@ I tried to add styling after completing the functionality of the app, but it ult
 
 Deploying to Heroku was another obstacle I had completely forgotten about until it was time to turn the assignment in. I struggled for about 45 minutes trying to connect the SQL database to Heroku, and this was with guidance. The provided guides were only nominally helpful but after all the kicking and screaming, I was finally able to deploy. 
 
-I've attached screenshots of my completed application below, and the link to my deployed application can be found here : https://git.heroku.com/stormy-fjord-01940.git
+I've attached screenshots of my completed application below, and the link to my deployed application can be found here : https://stormy-fjord-01940.herokuapp.com/
 
 ------------
 
