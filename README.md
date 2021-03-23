@@ -10,6 +10,8 @@ Link to my deployed application : <a href="https://stormy-fjord-01940.herokuapp.
 
 ------------
 
+Burger Eater is an application that tracks your consumption of different burgers. You can add burgers by using the 'Add a Burger' button, and move any available burger from Available to Devoured!
+
 Databases are hard. Backend development is like a maze with a million different corridors to get lost down. Handlebars are kind of the worst, and I don't like them. Setting up the folder structure wasn't so bad, I've made it a point to stay as close to industry standards as possible. However, like I previously mentioned, setting up a database is like writing a book in a language I don't speak.
 
 I tried to add styling after completing the functionality of the app, but it ultimately broke it, so I took it all out and left everything raw and ugly. However, for the purposes of this assignment, I simply don't care. Burgers can be added and then devoured, and that's all that matters. 
